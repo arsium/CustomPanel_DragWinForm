@@ -24,6 +24,9 @@ Public Class CustomPanelControl
 
         MyBase.OnPaint(e)
     End Sub
+    
+    
+    ''Native API  from  : https://github.com/RiyadPathan/DragControl/blob/master/DragControl.vb
     <DllImport("user32.dll")>
     Public Shared Function SendMessage(ByVal a As IntPtr, ByVal msg As Integer, ByVal wParam As Integer, ByVal lParam As Integer) As Integer
     End Function
