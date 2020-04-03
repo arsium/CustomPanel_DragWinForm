@@ -17,17 +17,8 @@ Public Class CustomPanelControl
         Dim B As New Bitmap(Width, Height)
         Dim g As Graphics = Graphics.FromImage(B)
 
-
-        '    g.Clear(Color.FromArgb(100, 100, 100))
-
-
-        ' Dim o As Brushes = Color.FromArgb(37, 37, 37)
-
-        '    Dim l = New SolidBrush(Color.FromArgb(100, 100, 100))
-
         e.Graphics.DrawImage(B.Clone, 0, 0)
         e.Graphics.SmoothingMode = Drawing2D.SmoothingMode.HighQuality
-
 
         g.Dispose() : B.Dispose()
 
